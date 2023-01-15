@@ -1,0 +1,22 @@
+<h1>Contact form</h1>
+<form (submit)="logModel()">
+    <div>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="name" id="name" [(ngModel)]="model.name" />
+    </div>
+    <br>
+    <div>
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" name="email" id="email" [(ngModel)]="model.email" />
+    </div>
+    <br>
+    <div>
+        <label for="message">Message:</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" [(ngModel)]="model.message"></textarea>
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+</form>
